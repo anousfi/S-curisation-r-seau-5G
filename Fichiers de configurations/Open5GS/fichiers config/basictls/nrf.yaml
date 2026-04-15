@@ -1,0 +1,46 @@
+logger:
+  file:
+    path: /var/log/open5gs/nrf.log
+
+global:
+
+nrf:
+  # sbi:
+  #   server:
+  #     - address: nrf.localdomain #.open5gs.org
+  #       port: 80
+
+################################################################################
+# HTTPS scheme with TLS
+################################################################################
+#  o Set as default if not individually set
+ default:
+   tls:
+     server:
+       scheme: https
+       private_key: /etc/open5gs/tls/nrf.key
+       cert: /etc/open5gs/tls/nrf.crt
+     client:
+       scheme: https
+       cacert: /etc/open5gs/tls/ca.crt
+ sbi:
+   server:
+     - address: nrf.localdomain #.open5gs.org
+#
+#  o Enable SSL key logging for Wireshark
+#    - This configuration allows capturing SSL/TLS session keys
+#      for debugging or analysis purposes using Wireshark.
+  # default:
+  #   tls:
+  #     server:
+  #       scheme: https
+  #       private_key: /etc/open5gs/tls/nrf.key
+  #       cert: /etc/open5gs/tls/nrf.crt
+  #       sslkeylogfile: /var/log/open5gs/tls/nrf-server-sslkeylog.log
+  #     client:
+  #       scheme: https
+  #       cacert: /etc/open5gs/tls/ca.crt
+  #       client_sslkeylogfile: /var/log/open5gs/tls/nrf-client-sslkeylog.log
+  # sbi:
+  #   server:
+  #     - address: nrf.localdomain #.open5gs.org

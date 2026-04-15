@@ -1,0 +1,58 @@
+db_uri: mongodb://db.open5gs.org/open5gs
+
+logger:
+  file:
+    path: /var/log/open5gs/pcf.log
+
+global:
+
+pcf:
+  # sbi:
+  #   server:
+  #     - address: pcf.localdomain #.open5gs.org
+  #       port: 80
+  #   client:
+  #     nrf:
+  #       - uri: http://nrf.localdomain:80 #.open5gs.org:80
+
+
+################################################################################
+# HTTPS scheme with TLS
+################################################################################
+#  o Set as default if not individually set
+  default:
+   tls:
+     server:
+       scheme: https
+       private_key: /etc/open5gs/tls/pcf.key
+       cert: /etc/open5gs/tls/pcf.crt
+     client:
+       scheme: https
+       cacert: /etc/open5gs/tls/ca.crt
+  sbi:
+   server:
+     - address: pcf.localdomain #.open5gs.org
+   client:
+     nrf:
+       - uri: https://nrf.localdomain #.open5gs.org
+#
+#  o Enable SSL key logging for Wireshark
+#    - This configuration allows capturing SSL/TLS session keys
+#      for debugging or analysis purposes using Wireshark.
+  # default:
+  #   tls:
+  #     server:
+  #       scheme: https
+  #       private_key: /etc/open5gs/tls/pcf.key
+  #       cert: /etc/open5gs/tls/pcf.crt
+  #       sslkeylogfile: /var/log/open5gs/tls/pcf-server-sslkeylog.log
+  #     client:
+  #       scheme: https
+  #       cacert: /etc/open5gs/tls/ca.crt
+  #       client_sslkeylogfile: /var/log/open5gs/tls/pcf-client-sslkeylog.log
+  # sbi:
+  #   server:
+  #     - address: pcf.localdomain #.open5gs.org
+  #   client:
+  #     nrf:
+  #       - uri: https://nrf.localdomain #.open5gs.org

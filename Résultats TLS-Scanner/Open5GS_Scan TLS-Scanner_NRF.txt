@@ -1,0 +1,430 @@
+INFO : Main - Performing Scan, this may take some time...
+INFO : Reflections - Reflections took 227 ms to scan 10 urls, producing 313 keys and 2544 values
+INFO : ThreadedScanJobExecutor - [1/52] Common bugs probe executed
+INFO : ThreadedScanJobExecutor - [2/52] Server name indication (SNI) probe executed
+INFO : ThreadedScanJobExecutor - [3/52] Compression probe executed
+INFO : ThreadedScanJobExecutor - [4/52] Protocol version probe executed
+INFO : ThreadedScanJobExecutor - [5/52] Cipher suite order probe executed
+INFO : ThreadedScanJobExecutor - [6/52] Client certificate authentication support probe executed
+INFO : ThreadedScanJobExecutor - [7/52] Signature Hash Algorithm Order probe executed
+INFO : ThreadedScanJobExecutor - [8/52] Record fragmentation probe executed
+INFO : ThreadedScanJobExecutor - [9/52] Early CCS probe executed
+INFO : ThreadedScanJobExecutor - [10/52] Tokenbinding probe executed
+INFO : ThreadedScanJobExecutor - [11/52] HTTP header probe executed
+INFO : ThreadedScanJobExecutor - [12/52] Cipher suite probe executed
+INFO : ThreadedScanJobExecutor - [13/52] Extensions probe executed
+INFO : ThreadedScanJobExecutor - [14/52] Signature and hash algorithm probe executed
+INFO : ThreadedScanJobExecutor - [15/52] TLS Fallback SCSV probe executed
+INFO : ThreadedScanJobExecutor - [16/52] Hello retry probe executed
+INFO : ThreadedScanJobExecutor - [17/52] ESNI probe executed
+INFO : ThreadedScanJobExecutor - [18/52] Certificate probe executed
+INFO : ThreadedScanJobExecutor - [19/52] EC point formats probe executed
+INFO : ThreadedScanJobExecutor - [20/52] Resumption probe executed
+INFO : ThreadedScanJobExecutor - [21/52] Renegotiation probe executed
+INFO : ThreadedScanJobExecutor - [22/52] ALPN probe executed
+INFO : ThreadedScanJobExecutor - [23/52] Alpaca attack probe executed
+INFO : ThreadedScanJobExecutor - [24/52] Named groups probe executed
+INFO : ThreadedScanJobExecutor - [25/52] Session ticket probe executed
+INFO : ThreadedScanJobExecutor - [26/52] Session ticket collector for afterprobe probe executed
+INFO : ThreadedScanJobExecutor - [27/52] Named groups order probe executed
+INFO : ThreadedScanJobExecutor - [28/52] Invalid curve probe executed
+INFO : ThreadedScanJobExecutor - 24 scheduled probes were not executed
+INFO : ThreadedScanJobExecutor - Finished scan
+INFO : Reflections - Reflections took 93 ms to scan 10 urls, producing 313 keys and 2544 values
+INFO : Main - Scanned in: 128s
+Report for 127.0.0.10:443
+
+------------------------------------------------------------
+Versions
+
+DTLS 1.0                         : could not test
+DTLS 1.2                         : could not test
+SSL 2.0                          : false
+SSL 3.0                          : false
+TLS 1.0                          : false
+TLS 1.1                          : false
+TLS 1.2                          : true
+TLS 1.3                          : true
+
+------------------------------------------------------------
+Supported Cipher suites
+
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_AES_256_GCM_SHA384
+TLS_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_CHACHA20_POLY1305_SHA256
+
+------------------------------------------------------------
+Supported in TLS 1.2(server order)
+
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+
+------------------------------------------------------------
+Supported in TLS 1.3(server order)
+
+TLS_AES_256_GCM_SHA384
+TLS_CHACHA20_POLY1305_SHA256
+TLS_AES_128_GCM_SHA256
+
+------------------------------------------------------------
+Perfect Forward Secrecy
+
+Supports PFS                     : true
+Prefers PFS                      : true
+Supports Only PFS                : true
+
+------------------------------------------------------------
+CipherSuite General
+
+Enforces CipherSuite ordering    : true
+
+------------------------------------------------------------
+Perfect Forward Secrecy
+
+Supports PFS                     : true
+Prefers PFS                      : true
+Supports Only PFS                : true
+
+------------------------------------------------------------
+CipherSuite General
+
+Enforces CipherSuite ordering    : true
+
+------------------------------------------------------------
+Supported Extensions
+
+EC_POINT_FORMATS
+EXTENDED_MASTER_SECRET
+ALPN
+SESSION_TICKET
+MAX_FRAGMENT_LENGTH
+SUPPORTED_VERSIONS
+KEY_SHARE
+RENEGOTIATION_INFO
+
+------------------------------------------------------------
+Extensions
+
+Secure Renegotiation             : true
+Extended Master Secret           : true
+Encrypt Then Mac                 : false
+Tokenbinding                     : false
+Certificate Status Request       : false
+Certificate Status Request v2    : false
+ESNI                             : false
+
+------------------------------------------------------------
+TLS 1.3 Named Groups
+
+SECP256R1
+
+------------------------------------------------------------
+Supported Named Groups
+
+SECP256R1
+
+------------------------------------------------------------
+NamedGroups General
+
+Enforces client's named group ordering : true
+
+------------------------------------------------------------
+Supported Signature and Hash Algorithms
+
+RSA_PSS_RSAE_SHA256
+RSA_SHA384
+RSA_SHA224
+RSA_SHA256
+RSA_PSS_RSAE_SHA512
+RSA_PSS_RSAE_SHA384
+RSA_SHA512
+
+
+------------------------------------------------------------
+Signature and Hash Algorithms General
+
+Enforces client's signature has algorithm ordering : true
+
+------------------------------------------------------------
+Supported Signature and Hash Algorithms TLS 1.3
+
+RSA_PSS_RSAE_SHA512
+RSA_PSS_RSAE_SHA256
+RSA_PSS_RSAE_SHA384
+
+------------------------------------------------------------
+Supported Compressions
+
+NULL
+
+------------------------------------------------------------
+Elliptic Curve Point Formats
+
+Uncompressed                     : true
+ANSIX962 Prime                   : true
+ANSIX962 Char2                   : false
+TLS 1.3 ANSIX962  SECP           : false
+
+------------------------------------------------------------
+Record Fragmentation
+
+Supports Record Fragmentation    : true
+
+------------------------------------------------------------
+ALPN
+
+HTTP/2 over TLS                  : true
+
+------------------------------------------------------------
+Common Bugs [EXPERIMENTAL]
+
+Version Intolerant               : false
+CipherSuite Intolerant           : false
+Extension Intolerant             : false
+CS Length Intolerant (>512 Byte) : false
+Compression Intolerant           : false
+ALPN Intolerant                  : false
+CH Length Intolerant             : false
+NamedGroup Intolerant            : false
+Empty last Extension Intolerant  : false
+SigHashAlgo Intolerant           : false
+Big ClientHello Intolerant       : false
+2nd CipherSuite Byte Bug         : false
+Ignores offered Cipher suites    : false
+Reflects offered Cipher suites   : false
+Ignores offered NamedGroups      : false
+Ignores offered SigHashAlgos     : false
+Grease CipherSuite Intolerant    : false
+Grease NamedGroup Intolerant     : false
+Grease SigHashAlgo Intolerant    : false
+
+------------------------------------------------------------
+TLS 1.3 Hello Retry Request
+
+Sends Hello Retry Request        : true
+Issues Cookie                    : false
+
+------------------------------------------------------------
+Attack Vulnerabilities
+
+Padding Oracle                   : could not test (not vulnerable)
+Bleichenbacher                   : could not test (not vulnerable)
+Raccoon                          : not vulnerable
+Direct Raccoon                   : could not test (not vulnerable)
+CRIME                            : not vulnerable
+Breach                           : not vulnerable
+Invalid Curve                    : not vulnerable
+Invalid Curve (ephemeral)        : not vulnerable
+Invalid Curve (twist)            : not vulnerable
+SSL Poodle                       : not vulnerable
+Logjam                           : not vulnerable
+Sweet 32                         : not vulnerable
+General DROWN                    : could not test (not vulnerable)
+Extra Clear DROWN                : could not test (not vulnerable)
+Heartbleed                       : could not test (not vulnerable)
+EarlyCcs                         : not vulnerable
+ALPACA                           : not mitigated
+Renegotiation Attack (ext)
+-1.hs without ext, 2.hs with ext : not vulnerable
+-1.hs with ext, 2.hs without ext : not vulnerable
+Renegotiation Attack (cs)
+-1.hs without cs, 2.hs with cs   : not vulnerable
+-1.hs with cs, 2.hs without cs   : not vulnerable
+
+------------------------------------------------------------
+Alpaca Details
+
+Strict ALPN                      : false
+Strict SNI                       : false
+ALPACA Mitigation                : not mitigated
+
+------------------------------------------------------------
+Bleichenbacher response map
+
+No test results
+No test results
+
+------------------------------------------------------------
+PaddingOracle response map
+
+No test results
+No test results
+
+------------------------------------------------------------
+Direct Raccoon Results
+
+No test results
+
+------------------------------------------------------------
+Invalid Curve Details
+
+No Vulnerabilities found
+
+------------------------------------------------------------
+Certificate Chain (Certificate 1 of 1)
+
+Chain ordered                    : true
+Contains Trust Anchor            : false
+Generally Trusted                : null
+Custom Trusted                   : false
+--|Certificate Issues
+
+Your peer did not provide a certificate which is valid for the scanned domain
+The peer sent multiple leaf certificates (weired)
+--|Certificate #1
+
+ Subject                         : C=KO S=Seoul O=NeoPlane CN=nrf.localdomain
+ Issuer                          : CN=ca.localdomain C=KO S=Seoul O=NeoPlane
+ Valid From                      : 2023-09-30T22:59:07.000Z
+ Valid Till                      : 2033-09-27T22:59:07.000Z
+ Expires in                      : 8 years
+ PublicKey Type:                 : RSA
+ Modulus                         : 0x85bd7aef8287ebd6b653728b69094663331432379d2837502b52120a5bf463f8edbbce48ed35fe9b3087660c29a1854259c704c11f1e920366e848e420fb3e710956a4843bc98890849aa73fb00dac2372a29b8a70cf3d25e489aa3c25643e5cd4739f0e1d24be9644c427ae601b9dac4d7c5057dfc933b6f5f956e9b786b953e088a4568cea3b73bf06d74a5d238d3231340236ba9ed039e5b208e3d34b8923fbd08e365a8ea514fee1e7c70d8db599cd18a38ecfbb7a2ef6996e7706bb3c4935841004ad7c71afa0d59ede5be2c2f2014fa1175616daa5d57a1f350ed5dac7d6e061e5986492a0989aec6182e19a124278e7fd437b697c6b7c7d3ea335bdd5
+ Public exponent                 : 0x10001
+ Signature Algorithm             : RSA_PKCS1
+ Hash Algorithm                  : SHA256
+ OCSP Supported                  : false
+ ROCA (simple)                   : false
+ Fingerprint (SHA256)            : 0x0E CA ED C7 5E 17 15 54 55 71 94 93 8C 39 67 54 6C 18 5E 28 0D BA D7 71 FE 64 32 2F 29 A3 5F A7
+
+------------------------------------------------------------
+Session
+
+Supports Session ID Resumption   : false
+Issues Session Tickets           : true
+Supports Session Ticket Resumption : false
+Issues TLS 1.3 Session Tickets directly after handshake : true
+Issues TLS 1.3 Session Tickets with Application Data : true
+Supports TLS 1.3 PSK             : false
+Supports TLS 1.3 PSK-DHE         : false
+Supports 0-RTT                   : false
+
+------------------------------------------------------------
+SessionTicketEval
+
+--|Summary
+
+ Ticket contains plain secret    : FALSE
+ Ticket use default STEK (enc)   : FALSE
+ Ticket use default STEK (MAC)   : FALSE
+ No (full) MAC check             : NO_MAC_CHECK_TICKET
+ Vulnerable to Padding Oracle    : PADDING_ORACLE_TICKET
+ Tickets can be reused           : COULD_NOT_TEST
+ Allows ciphersuite change       : FALSE
+ Tickets resumable in different version : FALSE
+--|Details
+
+Resuming TLS12 Ticket in
+        TLS13:                   : FALSE
+Resuming TLS13 Ticket in
+        TLS12:                   : FALSE
+ Allows ciphersuite change [TLS12] : FALSE
+ Allows ciphersuite change [TLS13] : FALSE
+ Tickets can be reused [TLS12]   : COULD_NOT_TEST
+ Tickets can be reused [TLS13]   : COULD_NOT_TEST
+----|Statistics
+
+------|TLS12
+
+   Ticket length                 : 160(x13)
+   Keyname/Prefix length         : 16
+   Found ASCII Strings           :
+                                 : [7 Bytes] "M@:7J25"
+------|TLS13
+
+   Ticket length                 : 208(x33)
+   Keyname/Prefix length         : 16
+   Found ASCII Strings           :
+                                 : [8 Bytes] "xw=dCQ73"
+
+------------------------------------------------------------
+Renegotioation
+
+Secure (Extension)               : false
+Secure (CipherSuite)             : false
+Insecure                         : false
+
+------------------------------------------------------------
+Entropy
+
+Uses Unixtime                    : false
+--|Nonce (Random)
+
+ Datapoints                      : 132
+ Bytes total                     : 3440 (not enough data collected)
+ Duplicates                      : false
+ Failed Entropy Test             : false
+ Failed Fourier Test             : false
+ Failed Frequency Test           : false
+ Failed Runs Test                : false
+ Failed Longest Run Test         : false
+ Failed Monobit Test             : false
+ Failed TemplateTests            : 0.02 %
+--|Session ID
+
+ Datapoints                      : 77
+ Bytes total                     : 2400 (not enough data collected)
+ Duplicates                      : true
+ Total duplicates                : 1
+ Failed Entropy Test             : false
+ Failed Fourier Test             : false
+ Failed Frequency Test           : false
+ Failed Runs Test                : false
+ Failed Longest Run Test         : false
+ Failed Monobit Test             : false
+ Failed TemplateTests            : 0.01 %
+--|CBC IV
+
+ Datapoints                      : 0
+ Bytes total                     : 0 (not enough data collected)
+ Duplicates                      : false
+ Failed Entropy Test             : true
+ Failed Fourier Test             : true
+ Failed Frequency Test           : true
+ Failed Runs Test                : true
+ Failed Longest Run Test         : true
+ Failed Monobit Test             : true
+ Failed TemplateTests            : 0.0 %
+
+------------------------------------------------------------
+PublicKey Parameter
+
+EC PublicKey reuse               : false
+DH PublicKey reuse               : could not test (no)
+Uses Common DH Primes            : could not test (no)
+Uses only prime moduli           : could not test (no)
+Uses only safe-prime moduli      : could not test (no)
+
+------------------------------------------------------------
+Scoring results
+
+Score: 3000
+
+------------------------------------------------------------
+Recommendations
+
+The server does not reject invalid SNI names. If possible configure your server to use strict SNI and strict ALPN verification
+HSTS is disabled. Enable HSTS
+The server does not reject unsupported ALPN Strings. If possible configure your server to use strict ALPN verification
+Encrypt-then-MAC extension is not supported. Enable support for the Encrypt-then-MAC
+The server does not reject invalid SNI names. If possible configure your server to use strict SNI verification
+
+------------------------------------------------------------
+Guidelines
+
+--|Guideline BSI TR-02102-2
+
+Adhered: 15
+Violated: 9
+Failed: 0
+Condition Not Met: 0
+--|Guideline NIST SP 800-52r2
+
+Adhered: 16
+Violated: 10
+Failed: 5
+Condition Not Met: 8
